@@ -1,0 +1,1 @@
+export const BASE_URl = 'https://api.adviceslip.com/advice'

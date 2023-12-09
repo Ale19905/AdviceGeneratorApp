@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'josefin sans';
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    width: 500px;
+    height: 300px;
+    background-color:  hsl(217, 19%, 24%);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#advice_field{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    height: 170px;
+    width: 450px;
+    
+    
+}
+
+#bottom{
+    display: flex;
+    justify-content: center;
+}
+#pattern{
+    width: 444px;
+}
+
+#get_Advice_Btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(150, 100%, 66%);
+    bottom: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    
+}
+
+#get_Advice_Btn:hover{
+    box-shadow: 0px 1px 10px hsl(150, 100%, 66%);
+}
+
+#advice_id{
+    color: hsl(150, 100%, 66%);
+    font-size: 15px;
+   
+    
+    text-transform: uppercase;
+}
+
+#advice{
+    
+    font-size: 22px;
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+    text-align: center;
+}
+
+@media (max-width: 376px){
+
+    #container{
+        width: 340px;
+    }
+    #advice_field{
+        width: 320px;
+    }
+
+    #advice{
+        font-size: 20px;
+    }
+
+    #get_Advice_Btn{
+        bottom: 160px;
+    }
+    #pattern{
+        width: 300px;
+    }
+}
